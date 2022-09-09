@@ -6,7 +6,7 @@ function Button({ styles }) {
       type="button"
       className={`py-4 px-6 outline-none font-poppins bg-blue-gradient ${styles} text-primary rounded-[10px]`}
     >
-      Get Started
+      <a href="https://google.com"> Get Started</a>
     </button>
   );
 }

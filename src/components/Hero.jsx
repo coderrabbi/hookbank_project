@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div id="hero" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div
-        className={`felx-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 relative z-[5]`}
+        className={`felx-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6  `}
       >
         <div
           className={`flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[16px] mb-2`}
@@ -29,7 +29,7 @@ function Hero() {
             <motion.div
               className="box"
               initial={{ opacity: 0, scale: 0.2 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               transition={{
                 default: {
                   duration: 0.2,
